@@ -95,12 +95,12 @@ public class Boat implements Serializable{
         this.category = category;
     }
 
-    public List<Message> getMessage() {
+    public List<Message> getMessages() {
         return messages;
     }
 
-    public void setMessage(List<Message> message) {
-        this.messages = message;
+    public void setMessages(List<Message> messages) {
+        this.messages = messages;
     }
 
     public List<Reservation> getReservations() {

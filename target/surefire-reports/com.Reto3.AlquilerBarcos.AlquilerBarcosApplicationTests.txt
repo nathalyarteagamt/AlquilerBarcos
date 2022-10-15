@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.Reto3.AlquilerBarcos.AlquilerBarcosApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.856 s <<< FAILURE! - in com.Reto3.AlquilerBarcos.AlquilerBarcosApplicationTests
+contextLoads  Time elapsed: 0.052 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.Reto3.AlquilerBarcos.modelo.Message.client references an unknown entity: ch.qos.logback.core.net.server.Client
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.Reto3.AlquilerBarcos.modelo.Message.client references an unknown entity: ch.qos.logback.core.net.server.Client
+
