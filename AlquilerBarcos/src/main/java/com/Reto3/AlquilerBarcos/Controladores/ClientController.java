@@ -44,7 +44,7 @@ public class ClientController {
     }
     
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     public Client update (@RequestBody Client client){
         return clientService.update(client);
     }

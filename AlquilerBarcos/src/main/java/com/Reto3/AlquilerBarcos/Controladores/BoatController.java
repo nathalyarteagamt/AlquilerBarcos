@@ -44,7 +44,7 @@ public class BoatController {
     }
     
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     public Boat update (@RequestBody Boat boat){
         return boatService.update(boat);
     }
